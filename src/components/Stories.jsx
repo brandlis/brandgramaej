@@ -2,7 +2,7 @@ import React from "react";
 import { useFetchMain } from "../hooks/useFetchMain";
 
 export function Stories() {
-  const { data, loading } = useFetchMain();
+  const { data } = useFetchMain();
   return (
     <div>
       <h1>

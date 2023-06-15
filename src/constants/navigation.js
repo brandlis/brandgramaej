@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBars,
   faClapperboard,
   faCommentDots,
   faCompass,
@@ -21,5 +20,4 @@ export const navigation = [
   { label: "Notificaciones", icon: <FontAwesomeIcon icon={faHeart} /> },
   { label: "Crear", icon: <FontAwesomeIcon icon={faSquarePlus} /> },
   { label: "Perfil", icon: <img src={Profile} alt="Perfil" /> },
-  { label: "Más", icon: <FontAwesomeIcon icon={faBars} /> },
 ];
