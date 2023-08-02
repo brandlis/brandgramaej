@@ -2,6 +2,8 @@ Gusto saludarte 👍
 
 comparto copia de Instagram echa con React.js utilizando informacion de la API Rick and Morty. Es una pagina estatica donde se utilizan la versatilidad de React al reutilizar componentes para realizar con mayor agilidad un proyecto.
 
+link pagina desplegada brandgramaej.vercel.app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
