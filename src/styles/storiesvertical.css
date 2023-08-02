@@ -1,5 +1,5 @@
 .container_main {
-  margin-left: 28rem;
+  margin-left: 26rem;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -50,7 +50,7 @@
 
 .container_data_name {
   position: absolute;
-  left: 31rem;
+  left: 29rem;
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
