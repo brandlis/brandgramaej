@@ -1,14 +1,16 @@
 import React from "react";
-import { Stories } from "../components/Stories";
 import { HistoriesHorizontal } from "../components/HistoriesHorizontal.jsx";
-
-import "../styles/stories.css";
+import { HistoriesVertical } from "./HistoriesVertical.jsx";
+import LoadHistories from "./LoadHistories.jsx";
+import ProfileAndSuggestion from "./ProfileAndSuggestion.jsx";
 
 export const Main = () => {
   return (
-    <div className="container_stories">
+    <div>
       <HistoriesHorizontal />
-      <Stories />
+      <HistoriesVertical />
+      <ProfileAndSuggestion />
+      <LoadHistories />
     </div>
   );
 };

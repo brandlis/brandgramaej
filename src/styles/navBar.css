@@ -1,16 +1,14 @@
 .container_navbar {
   position: fixed;
   top: 0;
-  width: 23%;
-  height: 100%;
-  border-right: 1px solid rgba(9, 0, 0, 0.113);
+  width: auto;
+  height: 100vh;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .container_navbar_img {
-  height: 3rem;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 1.6rem;
+  height: 2.6rem;
+  margin: 20px 0px 20px 30px;
   cursor: pointer;
 }
 
@@ -18,8 +16,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 80%;
-  padding-bottom: 30px;
+  height: 86%;
 }
 
 .container_navbar_navigation {
@@ -33,17 +30,21 @@
   align-items: center;
   cursor: pointer;
   margin: 0 20px;
-  padding: 5px;
+  padding: 8px;
 }
 
 .container_navbar_navigation_items:hover {
   background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 30px;
+  border-radius: 10px;
   transition: background-color 0.3s;
 
   .container_navbar_navigation_items_icon {
     transform: scale(1.04);
     transition: transform 0.3s;
+  }
+
+  .container_navbar_navigation_label h1 {
+    font-weight: 500;
   }
 }
 
@@ -64,5 +65,5 @@
 }
 
 .container_navbar_navigation_label h1 {
-  font-weight: 600;
+  font-weight: 300;
 }

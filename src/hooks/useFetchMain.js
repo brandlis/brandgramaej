@@ -3,19 +3,23 @@ import { useEffect, useState } from "react";
 export function useFetchMain() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [nextPage, setNextPage] = useState(1);
 
-  const getCharacter = () => {
-    setLoading(true);
-    fetch("https://rickandmortyapi.com/api/character")
-      .then((res) => res.json())
-      .then((pj) => setData(pj.results))
-      .catch((err) => err);
-    setLoading(false);
-  };
+  console.log(data);
 
   useEffect(() => {
-    getCharacter();
-  }, []);
+    setLoading(true);
+    async function fetchCharacter() {
+      const res = await fetch(
+        `https://rickandmortyapi.com/api/character?page=${nextPage}`
+      );
+      const data = await res.json();
+      setLoading(false);
+      setData(data.results);
+    }
 
-  return { data, loading };
+    fetchCharacter();
+  }, [nextPage]);
+
+  return { data, loading, setNextPage, nextPage };
 }
