@@ -5,8 +5,6 @@ export function useFetchMain() {
   const [loading, setLoading] = useState(false);
   const [nextPage, setNextPage] = useState(1);
 
-  console.log(data);
-
   useEffect(() => {
     setLoading(true);
     async function fetchCharacter() {
